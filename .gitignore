@@ -1,0 +1,24 @@
+# Build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+**/[Pp]ackages/*
+
+# OS
+Thumbs.db
+.DS_Store
