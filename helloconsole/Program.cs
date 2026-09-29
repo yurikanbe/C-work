@@ -1,67 +1,69 @@
 ﻿namespace MyApp;
 
 class Program
+
 {
-    static void Main(string[] args)
-    {
-        int a = ReadInt("1つ目の整数: ");
-        int b = ReadInt("2つ目の整数: ");
-        string op = ReadOperator();
+    // 計算機
+    // static void Main(string[] args)
+    // {
+    //     int a = ReadInt("1つ目の整数: ");
+    //     int b = ReadInt("2つ目の整数: ");
+    //     string op = ReadOperator();
 
-        if (op == "/" && b == 0)
-        {
-            Console.WriteLine("0では割れません");
-            return;
-        }
+    //     if (op == "/" && b == 0)
+    //     {
+    //         Console.WriteLine("0では割れません");
+    //         return;
+    //     }
 
-        int result = Calc(a, b, op);
-        Console.WriteLine(result);
-    }
+    //     int result = Calc(a, b, op);
+    //     Console.WriteLine(result);
+    // }
 
-    static int ReadInt(string message)
-    {
-        while (true)
-        {
-            Console.Write(message);
-            string? input = Console.ReadLine();
-            if (int.TryParse(input, out int number))
-            {
-                return number;
-            }
-            Console.WriteLine("整数を入力してください");
-        }
-    }
+    // static int ReadInt(string message)
+    // {
+    //     while (true)
+    //     {
+    //         Console.Write(message);
+    //         string? input = Console.ReadLine();
+    //         if (int.TryParse(input, out int number))
+    //         {
+    //             return number;
+    //         }
+    //         Console.WriteLine("整数を入力してください");
+    //     }
+    // }
 
-    static string ReadOperator()
-    {
-        while (true)
-        {
-            Console.Write("演算子(+ - * /): ");
-            string? input = Console.ReadLine();
-            if (input == "+" || input == "-" || input == "*" || input == "/")
-            {
-                return input;
-            }
-            Console.WriteLine("+ - * / のいずれかを入力してください");
-        }
-    }
+    // static string ReadOperator()
+    // {
+    //     while (true)
+    //     {
+    //         Console.Write("演算子(+ - * /): ");
+    //         string? input = Console.ReadLine();
+    //         if (input == "+" || input == "-" || input == "*" || input == "/")
+    //         {
+    //             return input;
+    //         }
+    //         Console.WriteLine("+ - * / のいずれかを入力してください");
+    //     }
+    // }
 
-    static int Calc(int a, int b, string op)
-    {
-        if (op == "+")
-        {
-            return a + b;
-        }
-        if (op == "-")
-        {
-            return a - b;
-        }
-        if (op == "*")
-        {
-            return a * b;
-        }
-        return a / b;
-    }
+    // static int Calc(int a, int b, string op)
+    // {
+    //     if (op == "+")
+    //     {
+    //         return a + b;
+    //     }
+    //     if (op == "-")
+    //     {
+    //         return a - b;
+    //     }
+    //     if (op == "*")
+    //     {
+    //         return a * b;
+    //     }
+    //     return a / b;
+    // }
 
     // 数字当てゲーム
     // static void Main(string[] args)
